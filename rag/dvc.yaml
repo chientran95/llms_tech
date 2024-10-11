@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python process.py data\webpage.html
+    deps:
+    - data\webpage.html
+    - process.py
+    outs:
+    - data\prepared\vectorstore
